@@ -4,10 +4,10 @@
 
 :root {
   --backgroundcontainer-color: #faf8f4;
-  --textlinkcolor: #db4b44;
-  --textlinkblue: #092076;
-  --background-image: url(../images/Portal%20Assets/SVG/Intersection\ 1.svg);
-  --background-imagepng: url(../images/Portal%20Assets/PNG/BG.png);
+  --textlinkcolor: #EF3C3B;
+  --textlinkblue: #067EDA;
+  --background-image: url(../images/PortalAssets/SVG/Intersection\ 1.svg);
+  --background-imagepng: url(../images/PortalAssets/PNG/BG.png);
 }
 
 /* End Variables */
@@ -27,17 +27,122 @@
 body {
   font-family: "Cairo", sans-serif;
 }
-
+::marker {
+  content: "";
+}
 /* control for page */
+.language-logo a {
+  display: list-item;
+  height: 100%;}
 
 .background {
   position: relative;
-  background: var(--backgroundcontainer-color);
-  background-image: var(--background-image);
-  padding: 15px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  background-image: var(--background-imagepng);
+  padding: 15px 0;
   height: 100vh;
+  background-size: 106%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.language-logo {
+  background-image: url(../images/PortalAssets/SVG/en-full.svg) !important;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 8%;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+.language-logo {
+transition: transform 0.2s ease-in-out;
+}
+.language-logo:hover {
+transform: translate(0, -6px);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+}
+
+
+
+@media (max-width: 1200px) {
+  .login-content {
+    margin: 0 !important;
+  }
+  .background {
+      position: relative;
+      background-image: var(--background-imagepng);
+      padding: 15px;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-size: 205% !important;
+      background-position: left;
+  }
+  .language-logo {
+    background-image: url(../images/PortalAssets/SVG/en.svg) !important;
+
+    width: 10%;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .language-logo {
+    background-image: url(../images/PortalAssets/SVG/en.svg) !important;
+
+    width: 22%;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .style-icons {
+
+  position: absolute;
+  direction: rtl;
+  width: 82% !important;
+  height: calc(100% - 180px) !important;
+  /* margin-top: -49px; */
+  right: 11% !important;
+  overflow: auto;
+  top: 15% !important;
+  
+  }
+  .background {
+    position: relative;
+    background-image: var(--background-imagepng);
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: right !important;
+    height: 100vh;
+    background-size: 200% !important;    
+}
+.language-logo {
+  background-image: url(../images/PortalAssets/SVG/en.svg) !important;
+ 
+}}
+
+@media (max-width: 440px) {
+  .language-logo {
+    background-image: url(../images/PortalAssets/SVG/en.svg) !important;
+
+
+  }
+  .background {
+    position: relative;
+    background-image: var(--background-imagepng);
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: right !important;
+    height: 100vh;
+    background-size: 485% !important;
+    
+}
 }
 
 a {
@@ -63,30 +168,20 @@ a {
   height: 39px;
   opacity: 100%;
 }
-.language-logo {
-  position: relative;
-  bottom: 57px;
-  margin-left: 15px;
-  cursor: pointer;
-  display: inline-block;
-}
 
-.language-logo {
-  transition: transform 0.2s ease-in-out;
-}
 
 .language-logo:hover {
   transform: translate(0, -6px);
 }
-
 .style-icons {
   position: absolute;
   direction: rtl;
-  width: 50%;
-  height: calc(100% - 224px);
-  margin-top: 20px;
-  right: 9%;
+  width: 55%;
+  height: calc(100% - 243px);
+  /* margin-top: -49px; */
+  right: 10%;
   overflow: auto;
+  top: 19%;
 }
 
 .style-icons::-webkit-scrollbar {
