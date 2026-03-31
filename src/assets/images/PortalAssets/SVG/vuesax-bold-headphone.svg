@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_bold_headphone" data-name="vuesax/bold/headphone" transform="translate(-616 -190)">
+    <g id="headphone">
+      <path id="Vector" d="M.752,16.6A.755.755,0,0,1,0,15.85v-5.7A9.906,9.906,0,0,1,9.952,0,10.063,10.063,0,0,1,20,10.05v5.7a.75.75,0,1,1-1.5,0v-5.7A8.559,8.559,0,0,0,9.952,1.5,8.4,8.4,0,0,0,1.5,10.13v5.71A.751.751,0,0,1,.752,16.6Z" transform="translate(617.998 192.05)" fill="#092076"/>
+      <path id="Vector-2" data-name="Vector" d="M3.94,0H3.81A3.815,3.815,0,0,0,0,3.81V5.69A3.815,3.815,0,0,0,3.81,9.5h.13A3.815,3.815,0,0,0,7.75,5.69V3.81A3.815,3.815,0,0,0,3.94,0Z" transform="translate(618 202.45)" fill="#092076"/>
+      <path id="Vector-3" data-name="Vector" d="M3.94,0H3.81A3.815,3.815,0,0,0,0,3.81V5.69A3.815,3.815,0,0,0,3.81,9.5h.13A3.815,3.815,0,0,0,7.75,5.69V3.81A3.815,3.815,0,0,0,3.94,0Z" transform="translate(630.25 202.45)" fill="#092076"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(640 214) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

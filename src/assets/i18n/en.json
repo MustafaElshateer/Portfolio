@@ -1,0 +1,24 @@
+{
+  "portal": {
+    "title": "Tanmeyah Portal"
+  },
+  "actions": {
+    "switchLanguage": "Switch language",
+    "open": "Open"
+  },
+  "items": {
+    "email": "e-mail",
+    "hrSelfService": "HR Self Service",
+    "intranet": "intranet",
+    "helpDesk": "help desk",
+    "crm": "CRM",
+    "digitalPayment": "d. payment",
+    "attendance": "attendance",
+    "scoreCard": "Score Card",
+    "process": "Process",
+    "erp": "ERP",
+    "bankPlus": "bank plus",
+    "password": "password",
+    "fmc": "FMC"
+  }
+}

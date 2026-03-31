@@ -1,1 +1,299 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --portal-red: #ef3c3b;
+  --portal-blue: #067eda;
+  --portal-text: #1f2937;
+  --portal-bg-image: url('assets/images/PortalAssets/PNG/BG.png');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  color: var(--portal-text);
+  background: #f5f5f5;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+body.ltr {
+  direction: ltr;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+.portal-page {
+  min-height: 100vh;
+  background-image: var(--portal-bg-image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.portal-shell {
+  min-height: 100vh;
+  position: relative;
+}
+
+.portal-header {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+
+  /* مهم جدًا: ثبّت ترتيب الزر واللوجو */
+  direction: ltr;
+}
+
+.portal-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.portal-logo img {
+  width: 118px;
+  height: auto;
+  object-fit: contain;
+}
+
+.language-switch {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.language-switch__badge {
+  min-width: 126px;
+  height: 50px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  /* مهم: خليه ثابت ومايتقلبش في العربي */
+  direction: ltr;
+}
+
+.language-switch__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--portal-blue);
+  white-space: nowrap;
+}
+
+body.rtl .language-switch__text {
+  direction: rtl;
+  text-align: right;
+}
+
+body.ltr .language-switch__text {
+  direction: ltr;
+  text-align: left;
+}
+
+
+
+/* ممنوع أي row-reverse أو قلب اتجاه هنا */
+body.rtl .portal-header,
+body.ltr .portal-header,
+body.rtl .language-switch__badge,
+body.ltr .language-switch__badge {
+  flex-direction: row;
+}
+
+.portal-content {
+  position: absolute;
+  top: 175px;
+  right: 72px;
+  width: 860px;
+  z-index: 2;
+}
+
+body.rtl .portal-content {
+  right: 14%;
+}
+
+.portal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px 36px;
+  align-items: flex-start;
+}
+
+.portal-card {
+  width: 114px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-6px);
+}
+
+.portal-card__box {
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-card__circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(239, 60, 59, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-card__circle--blue {
+  background: rgba(6, 126, 218, 0.12);
+}
+
+.portal-card__inline-icon,
+.portal-card__image-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-card__image-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.portal-card__inline-icon svg {
+  display: block;
+}
+
+.portal-card__label {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--portal-red);
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.portal-card__label--blue {
+  color: var(--portal-blue);
+}
+
+@media (max-width: 1400px) {
+  .portal-content {
+    right: 72px;
+    width: 760px;
+  }
+
+  body.rtl .portal-content {
+    left: 72px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .portal-content {
+    position: relative;
+    top: 170px;
+    right: auto;
+    left: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  body.rtl .portal-content {
+    left: auto;
+  }
+
+  .portal-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .portal-header {
+    top: 20px;
+    left: 14px;
+    right: 14px;
+  }
+
+  .portal-logo img {
+    width: 95px;
+  }
+
+  .language-switch__badge {
+    min-width: 104px;
+    height: 42px;
+    padding: 0 14px;
+    gap: 10px;
+  }
+
+  .language-switch__text {
+    font-size: 14px;
+  }
+
+  .language-switch__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .portal-content {
+    top: 140px;
+  }
+
+  .portal-grid {
+    gap: 20px;
+  }
+
+  .portal-card {
+    width: 100px;
+  }
+
+  .portal-card__box {
+    width: 88px;
+    height: 88px;
+  }
+
+  .portal-card__label {
+    font-size: 14px;
+    white-space: normal;
+  }
+}

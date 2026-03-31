@@ -1,0 +1,23 @@
+{
+  "portal": {
+    "title": "بوابة تنمية"
+  },
+  "actions": {
+    "switchLanguage": "تغيير اللغة",
+    "open": "فتح"
+  },
+  "items": {
+    "email": "البريد الإلكتروني",
+    "hrSelfService": "الخدمات الذاتية",
+    "intranet": "الشبكة الداخلية",
+    "helpDesk": "تسجيل مشكلة",
+    "crm": "CRM",
+    "digitalPayment": "الدفع الرقمي",
+    "attendance": "الحضور",
+    "scoreCard": "Score Card",
+    "process": "Process",
+    "erp": "ERP",
+    "password": "كلمة المرور",
+    "fmc": "FMC"
+  }
+}
