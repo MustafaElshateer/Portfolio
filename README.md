@@ -1,4 +1,4 @@
-# Mustafa Elshateer Portfolio
+# Companys Portfolio
 
 A personal portfolio website built with **Angular**, **TypeScript**, **HTML**, and **CSS**.
 
