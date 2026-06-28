@@ -7,18 +7,18 @@
     "open": "Open"
   },
   "items": {
-    "email": "e-mail",
-    "hrSelfService": "HR Self Service",
-    "intranet": "intranet",
-    "helpDesk": "help desk",
-    "crm": "CRM",
-    "digitalPayment": "d. payment",
-    "attendance": "attendance",
-    "scoreCard": "Score Card",
-    "process": "Process",
-    "erp": "ERP",
-    "bankPlus": "bank plus",
-    "password": "password",
-    "fmc": "FMC"
+    "email": "Message Portal",
+    "hrSelfService": "Employee Services",
+    "intranet": "Internal Hub",
+    "helpDesk": "IT Support",
+    "crm": "Customer Manager",
+    "digitalPayment": "Payment Portal",
+    "attendance": "Attendance System",
+    "scoreCard": "Performance Board",
+    "process": "Process Manager",
+    "erp": "Resource System",
+    "bankPlus": "Bank Plus",
+    "password": "Account Access",
+    "fmc": "Follow-up Center"
   }
 }

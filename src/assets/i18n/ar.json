@@ -7,17 +7,17 @@
     "open": "فتح"
   },
   "items": {
-    "email": "البريد الإلكتروني",
-    "hrSelfService": "الخدمات الذاتية",
-    "intranet": "الشبكة الداخلية",
-    "helpDesk": "تسجيل مشكلة",
-    "crm": "CRM",
-    "digitalPayment": "الدفع الرقمي",
-    "attendance": "الحضور",
-    "scoreCard": "Score Card",
-    "process": "Process",
-    "erp": "ERP",
-    "password": "كلمة المرور",
-    "fmc": "FMC"
+    "email": "بوابة الرسائل",
+    "hrSelfService": "خدمات الموظف",
+    "intranet": "المركز الداخلي",
+    "helpDesk": "الدعم الفني",
+    "crm": "إدارة العملاء",
+    "digitalPayment": "بوابة المدفوعات",
+    "attendance": "نظام الحضور",
+    "scoreCard": "لوحة الأداء",
+    "process": "إدارة العمليات",
+    "erp": "نظام الموارد",
+    "password": "إدارة الحساب",
+    "fmc": "مركز المتابعة"
   }
 }
